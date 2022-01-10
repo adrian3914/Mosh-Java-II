@@ -9,6 +9,11 @@ public class TextBox extends UIControl{
         System.out.println("TextBox");
     }
 
+    @Override // annotation that gives the java compiler extra information
+    public String toString() {
+        return text;
+    }
+
     // methods
      public void setText(String text){
         this.text = text; // this -> this object
@@ -17,4 +22,5 @@ public class TextBox extends UIControl{
     public void clear(){
         text = "";
     }
+
 }
