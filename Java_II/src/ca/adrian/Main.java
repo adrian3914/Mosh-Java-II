@@ -3,9 +3,7 @@ package ca.adrian;
 public class Main {
 
     public static void main(String[] args) {
-     var control = new TextBox();
-     control.disable();
-     System.out.println(control.isEnabled());
+
     }
 
 
@@ -30,6 +28,21 @@ public class Main {
       MortgageReport report = new MortgageReport(mortgageCalculator);
       report.printMortgage();
       report.printPaymentSchedule();
+     */
+
+    /* Inheritance
+        var control = new TextBox();
+        control.disable();
+        System.out.println(control.isEnabled());
+     */
+
+    /*  The Object Class
+        var box1 = new TextBox();
+        System.out.println("box1 hashCode: " + box1.hashCode());
+        var box2 = box1;
+        System.out.println("box2 hashCode: " + box2.hashCode());
+        System.out.println(box1.equals(box2));
+        System.out.println(box1.toString());
      */
 
 }
