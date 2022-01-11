@@ -4,10 +4,6 @@ public class TextBox extends UIControl{
     // fields
     private String text = "";
 
-    public TextBox() {
-        super(true);
-    }
-
     @Override
     public void render() {
         System.out.println("Render TextBox");
