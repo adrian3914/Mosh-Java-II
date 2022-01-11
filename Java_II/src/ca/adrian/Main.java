@@ -1,13 +1,26 @@
 package ca.adrian;
 
+import org.w3c.dom.Text;
+
 public class Main {
 
     public static void main(String[] args) {
+        // Upcasting and Downcasting
+        var control = new UIControl(true);
         var textBox = new TextBox();
-        textBox.setText("Hello World");
-        System.out.println(textBox);
+        show(control);
     }
 
+    public static void show(UIControl control){
+        if (control instanceof TextBox){
+            // cast in order to have access to textBox members
+            var textBox = (TextBox) control;
+            textBox.setText("Hello from TextBox");
+            System.out.println(textBox);
+        }
+        else
+        System.out.println(control);
+    }
 
     /*
        var textBox1 = new TextBox();
@@ -45,6 +58,13 @@ public class Main {
         System.out.println("box2 hashCode: " + box2.hashCode());
         System.out.println(box1.equals(box2));
         System.out.println(box1.toString());
+     */
+
+    /*
+        Override Methods
+        var textBox = new TextBox();
+        textBox.setText("Hello World");
+        System.out.println(textBox);
      */
 
 }

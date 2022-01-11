@@ -6,7 +6,6 @@ public class TextBox extends UIControl{
 
     public TextBox() {
         super(true);
-        System.out.println("TextBox");
     }
 
     @Override // annotation that gives the java compiler extra information
