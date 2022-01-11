@@ -1,25 +1,14 @@
 package ca.adrian;
 
-import org.w3c.dom.Text;
-
 public class Main {
 
     public static void main(String[] args) {
-        // Upcasting and Downcasting
-        var control = new UIControl(true);
-        var textBox = new TextBox();
-        show(control);
-    }
+        var point1 = new Point(1,2);
+        var point2 = new Point(1,2);
 
-    public static void show(UIControl control){
-        if (control instanceof TextBox){
-            // cast in order to have access to textBox members
-            var textBox = (TextBox) control;
-            textBox.setText("Hello from TextBox");
-            System.out.println(textBox);
-        }
-        else
-        System.out.println(control);
+        System.out.println(point1.equals(point2));
+        System.out.println(point1.hashCode());
+        System.out.println(point2.hashCode());
     }
 
     /*
@@ -65,6 +54,24 @@ public class Main {
         var textBox = new TextBox();
         textBox.setText("Hello World");
         System.out.println(textBox);
+     */
+
+    /*
+        // Upcasting and Downcasting
+        var control = new UIControl(true);
+        var textBox = new TextBox();
+        show(control);
+
+        public static void show(UIControl control){
+        if (control instanceof TextBox){
+            // cast in order to have access to textBox members
+            var textBox = (TextBox) control;
+            textBox.setText("Hello from TextBox");
+            System.out.println(textBox);
+        }
+        else
+        System.out.println(control);
+    }
      */
 
 }
