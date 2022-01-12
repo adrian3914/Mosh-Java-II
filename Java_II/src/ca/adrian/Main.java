@@ -3,9 +3,7 @@ package ca.adrian;
 public class Main {
 
     public static void main(String[] args) {
-       UIControl[] controls = { new TextBox(), new CheckBox()};
-       for(UIControl control: controls)
-           control.render();
+
     }
 
     /*
@@ -79,6 +77,13 @@ public class Main {
         System.out.println(point1.equals(point2));
         System.out.println(point1.hashCode());
         System.out.println(point2.hashCode());
+     */
+
+    /*
+       // Polymorphism
+       UIControl[] controls = { new TextBox(), new CheckBox()};
+       for(UIControl control: controls)
+           control.render();
      */
 
 }
