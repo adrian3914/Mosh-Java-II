@@ -1,6 +1,6 @@
 package ca.adrian;
 
-public class TaxCalculator2018 implements TaxCalculator{
+public class TaxCalculator2018 extends AbstractTaxCalculator{
     private double taxableIncome;
 
     public TaxCalculator2018(double taxableIncome) {
@@ -9,7 +9,7 @@ public class TaxCalculator2018 implements TaxCalculator{
 
    @Override
     public double calculateTax(){
-        var minTax = TaxCalculator.minimumTax;
+        getTaxableIncome(230_000, 120_000);
         return taxableIncome * 0.3;
     }
 }
