@@ -9,6 +9,7 @@ public class TaxCalculator2018 implements TaxCalculator{
 
    @Override
     public double calculateTax(){
+        var minTax = TaxCalculator.minimumTax;
         return taxableIncome * 0.3;
     }
 }

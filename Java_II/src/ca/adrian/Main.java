@@ -6,6 +6,10 @@ public class Main {
 
     }
 
+    public static void doSomething(TaxCalculator calculator){
+        var minTax = TaxCalculator.minimumTax;
+    }
+
     /*
        var textBox1 = new TextBox();
        textBox1.setText("Box 1");
