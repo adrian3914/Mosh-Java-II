@@ -3,12 +3,11 @@ package ca.adrian;
 public class Main {
 
     public static void main(String[] args) {
-        var calculator2018 = new TaxCalculator2018(100_000);
-        var report = new TaxReport(calculator2018);
-        report.show();
-
-        report.setCalculator(new TaxCalculator2019());
-        report.show();
+       var calculator2018 = new TaxCalculator2018(100_000);
+       var calculator2019 = new TaxCalculator2019();
+       var report = new TaxReport();
+       report.show(calculator2018);
+       report.show(calculator2019);
     }
 
     /*
