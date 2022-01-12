@@ -13,7 +13,7 @@ public class TaxReport {
     System.out.println(tax);
   }
 
-//  public void setCalculator(TaxCalculator calculator) {
+//  public void setCalculator(TaxCalculator2018 calculator) {
 //    this.calculator = calculator;
 //  }
 }

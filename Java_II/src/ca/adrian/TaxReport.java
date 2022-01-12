@@ -5,7 +5,7 @@ public class TaxReport {
 
     // constructor
     public TaxReport(){
-        this.calculator = new TaxCalculator(100_000);
+        this.calculator = new TaxCalculator2018(100_000);
     }
 
     public void show(){
