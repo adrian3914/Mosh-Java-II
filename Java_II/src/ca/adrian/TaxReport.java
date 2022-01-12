@@ -1,15 +1,19 @@
 package ca.adrian;
 
 public class TaxReport {
-    private TaxCalculator calculator;
+    private TaxCalculator calculator; // interface
 
-    // constructor
-    public TaxReport(){
-        this.calculator = new TaxCalculator2018(100_000);
+    // constructor, dependency injection by the constructor
+    public TaxReport(TaxCalculator calculator){
+        this.calculator = calculator;
     }
 
     public void show(){
         var tax = calculator.calculateTax();
         System.out.println(tax);
+    }
+
+    public void setCalculator(TaxCalculator calculator) {
+        this.calculator = calculator;
     }
 }
